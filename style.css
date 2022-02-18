@@ -1,0 +1,64 @@
+*{
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    padding:1em;
+    flex-wrap: wrap;
+}
+header{
+    display:grid;
+    flex-basis: 100%;
+    grid-template-columns: repeat(7, 1fr);
+}
+h1{
+    grid-column: 3/6;
+    text-align: center;
+}
+h2{
+    cursor: pointer;
+}
+.game{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.col{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin: 5px;
+    background-color: #fff;
+    border:2px solid #bbb;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: 0.5s all ease-in-out;
+}
+.filled{
+    border-color: #555; 
+    transition: 0.5s all ease-in-out;
+}
+.done{
+    color: beige;
+}
+.wrong{
+    background-color: #555;
+}
+.right{
+    background-color: teal;
+}
+.semi{
+    background-color: rgb(255, 196, 0);
+}
